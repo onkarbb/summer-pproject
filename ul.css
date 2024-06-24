@@ -1,0 +1,272 @@
+/* styles.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(46, 97%, 55%);
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    width: 60%;
+    margin: auto;
+    overflow: -moz-hidden-unscrollable;
+}
+
+/* Header Styles */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 60px;
+    border-bottom: #e8491d 3px solid;
+    
+}
+
+nav{
+    flex: grow 1;
+    text-align:left;
+    
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+p{
+    text-align:center;
+    margin-left: 40px;
+}
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    justify-self: end;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 20px;
+}
+
+header #branding {
+    float: center;
+}
+
+header #branding h1 {
+    margin: 0;
+   
+}
+
+header nav {
+    float: bottom;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: hsl(0, 99%, 55%);
+}
+
+/* Showcase */
+#showcase {
+    min-height: 400px;
+    background: url('library.jpg') no-repeat 0 -400px;
+    text-align: center;
+    color: hsl(0, 65%, 28%);
+}
+
+#showcase h1 {
+    margin-top: 60px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 40px;
+}
+
+/* Main Content */
+main {
+    padding: 80px;
+    margin-top: 30;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 40px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 10px;
+    border: 1px solid #e8491d;
+    border-radius: 5px;
+    /* flex: 1 1 calc(33.333% - 40px); */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the content */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Maximum height for the images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-bottom: 1px solid #e8491d;
+    
+}
+
+
+.imagebox img{ display:block;}
+
+.card h3 {
+    margin-bottom: 10px;  
+}
+
+.card p {
+    margin-bottom: 22%;
+    padding-bottom: 60px;
+    
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+/* Unordered List Styles */
+ul {
+    list-style-type: disc;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Nested List Styles */
+ul ul {
+    list-style-type: circle;
+    margin: 10px 0 10px 20px;
+}
+
+ul ul li {
+    margin-bottom: 5px;
+}
+nav ul li a:hover,
+nav ul li a.active {
+    background: #575757;
+}
+
+
+/* Button Styles */
+button {
+    display: inline-block;
+    border: none;
+    background: #e8491d;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: hsl(24, 96%, 49%);
+}
+
+
+/* Form Styles */
+form {
+    background: hsl(61, 98%, 54%);
+    padding: 20px;
+    padding-right: 20rem;
+    border: 1px solid #e8491d;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    border: none;
+    background: #e8491d;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background: #35424a;
+}
+
+/* Footer Styles */
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
